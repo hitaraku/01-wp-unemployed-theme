@@ -14,6 +14,22 @@
 				<a id="lifechoice-link" href="#">なぜ、俺が無職で生きることを決めたか。</a>			
 			</div>
 		</section>
+
+		<?php echo get_bloginfo('name'); ?><br>
+		<?php echo get_bloginfo('description'); ?><br>
+		<a href="<?php echo get_bloginfo('wpurl')?>">aaa</a>
+
+		<?php
+			if ( have_posts() ) : while ( have_posts() ) : the_post();
+        		get_template_part( 'content', get_post_format() );
+			endwhile; endif;
+			?>
+<nav>
+	<ul class="pager">
+		<li><?php next_posts_link( 'Previous' ); ?></li>
+		<li><?php previous_posts_link( 'Next' ); ?></li>
+	</ul>
+</nav>
 				
 		<section class="section-blogs">
 			<h2>ブログ &mdash; 新着一覧</h2>

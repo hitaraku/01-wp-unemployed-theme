@@ -31,15 +31,12 @@
             <nav>
 				<div id="header-menu" class="js--section-features">
 					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="#">無職</a></li>
-						<li><a href="#">無色</a></li>
+						<?php wp_list_pages( '&title_li=' ); ?>
 						<li>
 							<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
 								<span class="tooltiptext">aaaaa</span>
 							</div>
 						</li>
-						<li><a href="#">俺</a></li>
 						<!-- clear float left on <li> -->
 						<span class="clearfix"></span>
 					</ul>
