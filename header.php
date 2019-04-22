@@ -15,13 +15,11 @@
 		<link rel="stylesheet" href="<? bloginfo('stylesheet_url');?>">
 		
 		<!-- vendor -->
-		<link rel="stylesheet" type="text/css" href="<? bloginfo('template_url'); ?>/vendors/css/grid.css">
-		<link rel="stylesheet" type="text/css" href="<? bloginfo('template_url'); ?>/vendors/css/ionicons.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400" rel="stylesheet">
-		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="<? bloginfo('template_url'); ?>/resources/js/jQueryRotate.js"></script>
 		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script src="<? bloginfo('template_url'); ?>/vendors/js/jQueryRotate.js"></script>
+	    <script src="<? bloginfo('template_url'); ?>/vendors/js/jquery.waypoints.min.js"></script>
+
 		<?php wp_head(); ?>
 	</head>
 	
@@ -31,7 +29,7 @@
             <nav>
 				<div id="header-menu" class="js--section-features">
 					<ul>
-						<?php wp_list_pages( '&title_li=' ); ?>
+						<?php wp_list_pages( '&title_li=&depth=1' ); ?>
 						<li>
 							<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
 								<span class="tooltiptext">aaaaa</span>
@@ -46,15 +44,13 @@
 			<nav id="nav-sticky">
 				<div id="header-menu-sticky">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">無職</a></li>
-						<li><a href="#">無色</a></li>
-						<li>
-							<div class="tooltip-sticky"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
-								<span class="tooltiptext-sticky">aaaaa</span>
-							</div>
-						</li>
-						<li><a href="#">俺</a></li>
+					<?php wp_list_pages( '&title_li=&depth=1' ); ?>
+					<li>
+						<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
+							<span class="tooltiptext">aaaaa</span>
+						</div>
+					</li>
+
 						<!-- clear float left on <li> -->
 						<span class="clearfix"></span>
 					</ul>

@@ -1,3 +1,7 @@
+/* --------------------
+* impact-mu rotation
+-------------------- */
+
 var el = document.getElementById("impact-mu");
 var st = window.getComputedStyle(el, null);
 var tr = st.getPropertyValue("-webkit-transform") ||
@@ -18,7 +22,6 @@ var d = values[3];
 
 // angle calc from matrix elements
 var angle = Math.round(Math.asin(b) * (180/Math.PI));
-console.log(angle);
 
 // header-title-impact rotate
 $("#impact-mu").rotate({
@@ -33,7 +36,9 @@ $("#impact-mu").rotate({
   }
 });
 
-
+/* --------------------
+* sticky tag
+-------------------- */
 $(document).ready(function() {
     /* For the sticky navigation */
     $('.js--section-features').waypoint(function(direction) {

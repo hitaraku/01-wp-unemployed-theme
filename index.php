@@ -15,72 +15,25 @@
 			</div>
 		</section>
 
-		<?php echo get_bloginfo('name'); ?><br>
-		<?php echo get_bloginfo('description'); ?><br>
-		<a href="<?php echo get_bloginfo('wpurl')?>">aaa</a>
-
-		<?php
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
-        		get_template_part( 'content', get_post_format() );
-			endwhile; endif;
-			?>
-<nav>
+<!-- <nav>
 	<ul class="pager">
 		<li><?php next_posts_link( 'Previous' ); ?></li>
 		<li><?php previous_posts_link( 'Next' ); ?></li>
 	</ul>
-</nav>
+</nav> -->
 				
 		<section class="section-blogs">
-			<h2>ブログ &mdash; 新着一覧</h2>
+			<h2 class="home-section-header">ブログ &mdash; 新着一覧</h2>
 			<ul class="blogs-showcase clearfix">
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-			</ul>
-			<ul class="blogs-showcase clearfix">
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="blog-photo">
-                        <img src="<? bloginfo('template_url'); ?>/resources/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
-                    </figure>
-                </li>
+				<?php
+				if ( have_posts() ) : while ( have_posts() ) : the_post();
+					get_template_part( 'content', get_post_format() ); 
+				endwhile; endif; ?>
 			</ul>
 		</section>
 		
 		<section class="section-past_future">
-			<h2>過去 &mdash; 現在 &mdash; 未来</h2>
+			<h2 class="home-section-header">過去 &mdash; 現在 &mdash; 未来</h2>
 			<div class="row">
 				<div class="tv col span-1-of-4 box">
 					<a href="#">
