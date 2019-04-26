@@ -36,3 +36,9 @@
   <p>記事がありません</p>
   <?php endif; ?>
 </div>
+
+<!-- sidebar -->
+<div id="sidebar">
+  <?php get_sidebar(); ?>
+</div>
+<div class="clearfix"></div>

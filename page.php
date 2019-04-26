@@ -2,7 +2,7 @@
 
 	<div class="row">
 		<div class="col-sm-12">
-
+            <div class="page-content">
 			<?php
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 
@@ -10,7 +10,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 endwhile; endif;
 			?>
-
+            </div>
 		</div> <!-- /.col -->
 	</div> <!-- /.row -->
 

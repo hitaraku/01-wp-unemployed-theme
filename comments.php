@@ -1,27 +1,18 @@
-<?php if ( post_password_required() ) {
-	return;
-} ?>
-	<div id="comments" class="comments-area">
-		<?php if ( have_comments() ) : ?>
-			<h3 class="comments-title">
-<?php
-printf( _nx( 'One comment on "%2$s"', '%1$s comments on "%2$s"', get_comments_number(), 'comments title'),
-	number_format_i18n( get_comments_number() ), get_the_title() );
+<div id="comments" class="clearfix">
+  <?php
+if(have_comments()):
 ?>
-			</h3>
-			<ul class="comment-list">
-<?php
-wp_list_comments( array(
-	'short_ping'  => true,
-	'avatar_size' => 50,
-) );
+  <h3 id="resp">Comment</h3>
+  <ol class="commets-list">
+    <?php wp_list_comments('avatar_size=55'); ?>
+  </ol>
+  <?php
+endif;
+
+$args=array('title_reply' => '<i class="fa fa-envelope-o" aria-hidden="true"></i>- <span class="gf">Comments</span> -',
+'
+lavel_submit' => ('Submit Comment')
+);
+comment_form($args);
 ?>
-			</ul>
-		<?php endif; ?>
-		<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-			<p class="no-comments">
-<?php _e( 'Comments are closed.' ); ?>
-			</p>
-		<?php endif; ?>
-		<?php comment_form(); ?>
-	</div>
+</div>

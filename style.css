@@ -63,6 +63,12 @@ body {
     visibility: hidden;
 }
 
+ol li {
+    padding-left: 1.7em; 
+    text-indent: -1.7em; 
+    line-height: 1.8em;
+}
+
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
@@ -71,6 +77,16 @@ body {
     max-width: 1140px;
 	margin: 0 auto;
 	width: 80%;
+}
+
+#content {
+    margin: auto;
+    width: 80%;
+}
+
+#main {
+    width: 80%;
+    float: left;
 }
 
 section {
@@ -148,6 +164,7 @@ h3 {
     margin: 0 auto;
     margin-top: 30px;
 }
+
 
 /* ----------------------------------------------- */
 /* HEADER */
@@ -330,6 +347,41 @@ h3 {
 .tooltip-sticky:hover .tooltiptext-sticky {
 	visibility: visible;
 	opacity: 1;
+}
+
+
+/* ----------------------------------------------- */
+/* SIDEBAR */
+/* ----------------------------------------------- */
+
+#sidebar {
+    width: 20%;
+    float: right;
+}
+
+#sidebar h3 {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#sidebar li {
+    list-style-type: none;
+}
+
+#sidebar li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#sidebar li a:hover {
+    /* list-style-type: none; */
+    text-decoration: none;
+    color: white;
+    background-color: black;
 }
 
 /* ----------------------------------------------- */
@@ -652,6 +704,10 @@ footer p {
 /* TOPNEWS */
 /* ----------------------------------------------- */
 
+#topnews {
+	width:80%;
+	float:left;
+}
 
 #topnews h3{
 	border-width:0 0 0 0;
@@ -926,7 +982,7 @@ footer p {
 	  z-index: 1;
 	}
 	#topnews dt img {
-		width: 360px;
+		/* width: 360px; */
 		height: 185px;
 	}
 	.category_info p {

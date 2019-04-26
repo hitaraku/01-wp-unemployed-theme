@@ -21,6 +21,9 @@
 	    <script src="<? bloginfo('template_url'); ?>/vendors/js/jquery.waypoints.min.js"></script>
 
 		<?php wp_head(); ?>
+		<!-- auto adsense -->
+		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(4) ) : else : ?>
+		<?php endif; ?>
 	</head>
 	
 	<body>

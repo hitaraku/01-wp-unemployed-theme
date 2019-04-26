@@ -23,10 +23,17 @@
 </p>
 
 
+<div class="page-content">
 <?php the_content(); ?>
+	</div>
 
 
 </div><!-- /.blog-post -->
+<!-- sidebar -->
+<div id="sidebar">
+  <?php get_sidebar(); ?>
+</div>
+<div class="clearfix"></div>
 </div>
 </div>
 	

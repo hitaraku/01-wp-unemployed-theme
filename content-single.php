@@ -18,6 +18,11 @@
     <?php if ($mtime = get_mtime('Y/m/d')) echo '<ion-icon name="refresh"></ion-icon>   ' , $mtime; ?>
 </p>
 
+<!-- Content -->
+<div class="post-content">
+    <?php the_content(); ?>
+</div>
+
 <!-- Author Info -->
 <div id="prof-upper-article">
 <div class="prof-under-article clearfix">
@@ -47,8 +52,10 @@
 </div>
 </div>
 
-<!-- Content -->
-<?php the_content(); ?>
-
-
 </div><!-- /.blog-post -->
+
+<!-- sidebar -->
+<div id="sidebar">
+    <?php get_sidebar(); ?>
+</div>
+<div class="clearfix"></div>

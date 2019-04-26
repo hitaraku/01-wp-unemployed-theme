@@ -120,3 +120,34 @@ function get_mtime($format) {
         return get_the_modified_time($format);
     }
 }
+
+//ファイル読み込み
+// require_once( 'resources/library/shortcodes.php' );
+require_once( 'resources/library/widget.php' );
+// require_once( 'resources/library/customizer.php' );
+// require_once( 'resources/library/customizer-color.php' );
+
+
+// スマホのみの条件分岐（is_mobile）を新たにつくる
+function is_mobile(){
+    $useragents = array(
+    'iPhone', // iPhone
+    'iPod', // iPod touch
+    'Android.*Mobile', // 1.5+ Android *** Only mobile
+    'Windows.*Phone', // *** Windows Phone
+    'dream', // Pre 1.5 Android
+    'CUPCAKE', // 1.5+ Android
+    'blackberry9500', // Storm
+    'blackberry9530', // Storm
+    'blackberry9520', // Storm v2
+    'blackberry9550', // Storm v2
+    'blackberry9800', // Torch
+    'webOS', // Palm Pre Experimental
+    'incognito', // Other iPhone browser
+    'webmate' // Other iPhone browser
+    );
+    $pattern = '/'.implode('|', $useragents).'/i';
+    return preg_match($pattern, $_SERVER['HTTP_USER_AGENT']);
+    }
+     
+     

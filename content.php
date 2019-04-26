@@ -22,4 +22,3 @@
     </figure>
 </li>
 
-</div><!-- /.blog-post -->
