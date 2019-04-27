@@ -26,7 +26,7 @@
 <div class="page-content">
 <?php the_content(); ?>
 	</div>
-
+    <?php get_template_part('profile1'); //プロフィール記事上読み込み ?> 
 
 </div><!-- /.blog-post -->
 <!-- sidebar -->

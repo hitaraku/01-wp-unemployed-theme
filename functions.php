@@ -170,3 +170,6 @@ function insert_field_facebook_url() {
     $a = get_option('facebook_url');
     echo '<input type="text" name="facebook_url" value="' . $a .'">';
 }
+
+// disable user description trim HTML tag
+remove_filter('pre_user_description', 'wp_filter_kses');

@@ -8,6 +8,7 @@
  */
 ?>
 <?php get_header(); ?>
+<div class="row">
 	<div id="content">
 		<div id="main">
 			<main>
@@ -35,8 +36,8 @@
 				</section>
 				
 				<section class="section-past_future">
+					<div id="row">
 					<h2 class="home-section-header">過去 &mdash; 現在 &mdash; 未来</h2>
-					<div class="row">
 						<div class="tv col span-1-of-4 box">
 							<a href="boku/10years-ago">
 								<p>１０年前</p>
@@ -67,8 +68,8 @@
 								<p>無職として生きて行く</p>
 							</a>
 						</div>
-					</div>
-					
+						<div class="clearfix"></div>
+					</div>					
 				</section>
 			</main>
 		</div>
@@ -76,6 +77,7 @@
 			<?php get_sidebar(); ?>
 		</div>
 		<div class="clearfix"></div>
-	</div>
+	</div><!-- content tag end -->
+</div><!-- row tag end -->
 
 <?php get_footer(); ?>

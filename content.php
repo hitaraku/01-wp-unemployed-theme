@@ -18,7 +18,7 @@
             <?php } else { ?>
             <?php //the_excerpt(); ?>
         <?php } ?>
-        <a class="blog-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <a class="blog-title" href="<?php the_permalink(); ?>"><?php echo mb_strimwidth(the_title('', '', false), 0, 20, "..."); ?></a>
     </figure>
 </li>
 
