@@ -32,4 +32,19 @@ register_sidebars(1, array(
         'before_title' => '',
         'after_title' => '',
         ));
+    register_sidebars(1, array(
+        'name' => '5. Twitter',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+        ));
+    register_sidebars(1, array(
+        'name' => '6.Facebook',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+        ));
+                                
                         

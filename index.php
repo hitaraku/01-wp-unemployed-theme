@@ -13,7 +13,7 @@
 			<main>
 				<section class="section-lifechoice">
 					<div id="chinema-effect" class="clearfix">
-						<a id="lifechoice-link" href="#">なぜ、俺が無職で生きることを決めたか。</a>			
+						<a id="lifechoice-link" href="boku/nazeboku">なぜ、僕が無職で生きることを決めたか。</a>			
 					</div>
 				</section>
 
@@ -38,7 +38,7 @@
 					<h2 class="home-section-header">過去 &mdash; 現在 &mdash; 未来</h2>
 					<div class="row">
 						<div class="tv col span-1-of-4 box">
-							<a href="#">
+							<a href="boku/10years-ago">
 								<p>１０年前</p>
 								<div class="past_future_photo">
 									<img src="<? bloginfo('template_url'); ?>/resources/img/past-1.jpg" alt="10 years ago.">
@@ -48,7 +48,7 @@
 						</div>
 						<div class="col span-1-of-8 box"></div>
 						<div class="tv col span-1-of-4 box">
-							<a href="#">
+							<a href="boku/5years-ago">
 								<p>５年前</p>
 								<div class="past_future_photo">
 									<img src="<? bloginfo('template_url'); ?>/resources/img/past-2.jpg" alt="10 years ago.">
@@ -58,7 +58,7 @@
 						</div>
 						<div class="col span-1-of-8 box"></div>
 						<div class="tv col span-1-of-4 box">
-							<a href="#">
+							<a href="boku/now">
 								<p>現在</p>
 								<div class="past_future_photo">
 									<span id="past-impact-mu">無</span>

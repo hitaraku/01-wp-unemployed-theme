@@ -35,7 +35,7 @@
 						<?php wp_list_pages( '&title_li=&depth=1' ); ?>
 						<li>
 							<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
-								<span class="tooltiptext">aaaaa</span>
+								<span class="tooltiptext">準備中です</span>
 							</div>
 						</li>
 						<!-- clear float left on <li> -->
@@ -50,7 +50,7 @@
 					<?php wp_list_pages( '&title_li=&depth=1' ); ?>
 					<li>
 						<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
-							<span class="tooltiptext">aaaaa</span>
+							<span class="tooltiptext">準備中です</span>
 						</div>
 					</li>
 

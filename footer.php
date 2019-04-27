@@ -11,23 +11,26 @@
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">無職</a></li>
-                        <li><a href="#">無色</a></li>
+                        <?php wp_list_pages( '&title_li=&depth=1' ); ?>
                         <li>
 							<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 20px;"></ion-icon></a>
-								<span class="tooltiptext">aaaaa</span>
+								<span class="tooltiptext">準備中です</span>
 							</div>
 						</li>
-                        <li><a href="#">俺</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
                     <ul class="social-links">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <?php if ( get_option( 'twitter_url' ) ) : ?> 
+                            <li><a href="<?php echo get_option( 'twitter_url' )?>"><i class="ion-social-twitter"></i></a></li>
+                            <? else : ?>
+                        <?php endif; ?>
+                        <?php if ( get_option( 'facebook_url' ) ) : ?> 
+                            <li><a href="<?php echo get_option( 'facebook_url' )?>"><i class="ion-social-facebook"></i></a></li>
+                            <? else : ?>
+                        <?php endif; ?>
+                        <!-- <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li> -->
                     </ul>
                 </div>
             </div>

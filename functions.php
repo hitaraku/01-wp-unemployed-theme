@@ -150,4 +150,23 @@ function is_mobile(){
     return preg_match($pattern, $_SERVER['HTTP_USER_AGENT']);
     }
      
-     
+/**
+ * "設定" > "表示設定" に項目追加.
+ */
+function add_settings_custom_fields() {
+	add_settings_field( 'twitter_url', 'Twitter Url', 'insert_field_twitter_url', 'reading', 'default' );
+	add_settings_field( 'facebook_url', 'Facebook Url', 'insert_field_facebook_url', 'reading', 'default' );
+	register_setting( 'reading', 'twitter_url' );
+	register_setting( 'reading', 'facebook_url' );
+}
+add_action( 'admin_init', 'add_settings_custom_fields' );
+
+function insert_field_twitter_url() {
+    $a = get_option('twitter_url');
+    echo '<input type="text" name="twitter_url" value="' . $a .'">';
+}
+
+function insert_field_facebook_url() {
+    $a = get_option('facebook_url');
+    echo '<input type="text" name="facebook_url" value="' . $a .'">';
+}
