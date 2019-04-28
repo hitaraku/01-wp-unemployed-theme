@@ -47,7 +47,7 @@
 								<p>自分の進路が曖昧</p>
 							</a>
 						</div>
-						<div class="col span-1-of-8 box"></div>
+						<div class="col span-1-of-10 box"></div>
 						<div class="tv col span-1-of-4 box">
 							<a href="boku/5years-ago">
 								<p>５年前</p>
@@ -57,7 +57,7 @@
 								<p>やりたかったIT業界へ</p>
 							</a>
 						</div>
-						<div class="col span-1-of-8 box"></div>
+						<div class="col span-1-of-10 box"></div>
 						<div class="tv col span-1-of-4 box">
 							<a href="boku/now">
 								<p>現在</p>

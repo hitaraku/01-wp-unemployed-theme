@@ -28,19 +28,22 @@
 	
 	<body>
 		<header>
+			<div id="mobile-menu"><ion-icon name="menu" style="width:30px;height:30px;"></ion-icon></div>
 			<div id="header-title">職業、<span id="impact-mu"><a href="/">無</a></span><span id="header-title-last">職</span>。</div>		
             <nav>
-				<div id="header-menu" class="js--section-features">
-					<ul>
-						<?php wp_list_pages( '&title_li=&depth=1' ); ?>
-						<li>
-							<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
-								<span class="tooltiptext">準備中です</span>
-							</div>
-						</li>
-						<!-- clear float left on <li> -->
-						<span class="clearfix"></span>
-					</ul>
+				<div id="container">
+					<div id="header-menu" class="pushy pushy-left">
+						<ul>
+							<?php wp_list_pages( '&title_li=&depth=1' ); ?>
+							<li>
+								<div class="tooltip"><a href="#"><ion-icon name="warning" style="font-size: 30px"></ion-icon></a>
+									<span class="tooltiptext">準備中です</span>
+								</div>
+							</li>
+							<!-- clear float left on <li> -->
+							<span class="clearfix"></span>
+						</ul>
+					</div>
 				</div>
 			</nav>
 			
@@ -59,5 +62,5 @@
 					</ul>
 				</div>
 			</nav>
-
+			<div class="site-overlay"></div>
 		</header>
