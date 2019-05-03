@@ -18,6 +18,10 @@
             <?php } else { ?>
             <?php //the_excerpt(); ?>
         <?php } ?>
+        <p class="blog-post-meta">
+            <ion-icon name="paper"></ion-icon><?php echo get_the_date('Y/m/d'); ?>
+            <?php if ($mtime = get_mtime('Y/m/d')) echo '<ion-icon name="refresh"></ion-icon>   ' , $mtime; ?>
+        </p>
         <a class="blog-title" href="<?php the_permalink(); ?>"><?php echo mb_strimwidth(the_title('', '', false), 0, 20, "..."); ?></a>
     </figure>
 </li>

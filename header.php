@@ -11,6 +11,9 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- vendor -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 		<!-- own -->
 		<link rel="stylesheet" href="<? bloginfo('stylesheet_url');?>">
 		
@@ -18,7 +21,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
         <script src="<? bloginfo('template_url'); ?>/vendors/js/jQueryRotate.js"></script>
-	    <script src="<? bloginfo('template_url'); ?>/vendors/js/jquery.waypoints.min.js"></script>
+		<script src="<? bloginfo('template_url'); ?>/vendors/js/jquery.waypoints.min.js"></script>
 
 		<?php wp_head(); ?>
 		<!-- auto adsense -->

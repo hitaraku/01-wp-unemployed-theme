@@ -96,8 +96,10 @@ border-radius: 30px;
 
 
 .blog-post-meta {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: #999;
+    margin-left: 10px;
+    margin-bottom:0px;
 }
 
 .post-content h2 {

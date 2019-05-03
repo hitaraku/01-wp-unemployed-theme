@@ -1,5 +1,5 @@
 /*
-Theme Name: Unemployed
+Theme Name: Unemployed-2
 Author: Hitaraku
 Author URI: https://evelinks.org
 Description: Unemployed is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
@@ -7,7 +7,7 @@ Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
-Text Domain: unemployed
+Text Domain: unemployed-2
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -120,7 +120,15 @@ pre span:before {
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
-	width: 80%;
+	width: 90%;
+}
+
+@media only screen and (min-width:781px) {
+	.row {
+		max-width: 1140px;
+		margin: 0 auto;
+		width: 80%;
+	}
 }
 
 #content {
@@ -658,43 +666,35 @@ h3 {
 }
 
 .blog-photo {
-	position: relative;
+    position: relative;
     width: 100%;
-    height: 150px;
     margin: 0;
     overflow: hidden;
-	background-color: #000;
-	margin: 10px 0;
+    background-color: white;
+    margin: 10px 0;
+    border: 2px solid black;
 }
 
 .blog-photo img {
-	opacity: 0.7;
-	width:100%;
-	height: 150px;
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-	transition: transform 0.5s, opacity 0.5s;
-}
-
-.blog-photo img:hover {
-	opacity: 1;
-    -webkit-transform: scale(1.00);
-    -ms-transform: scale(1.00);	
-	transform: scale(1.00);
+    opacity: 0.7;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 .blog-title {
-	position: absolute;
-    color: white;
-    top: 70px;
+    /* position: absolute; */
+    color: black;
+    /* top: 70px; */
     font-size: 20px;
-	padding: 10px;
-	border-radius: 10px;
-	margin-left: 10px;
-	text-decoration: none;
-	transition: background-color 0.5s, color 0.5s;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .blog-title:hover {
@@ -712,16 +712,18 @@ h3 {
 }
 
 .blog-category {
-    position: absolute;
-    top: 0px;
-    padding: 5px;
+    width: 30%;
+    text-align: center;
+    padding: 3px;
+    margin: 10px;
+    display: block;
     background-color: black;
     color: white;
     text-decoration: none;
     z-index: 3;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
 }
-
 
 @media only screen and (min-width:781px) {
 	.blog-photo {
@@ -731,18 +733,21 @@ h3 {
 		margin: 0;
 		overflow: hidden;
 		background-color: #000;
+		border: 0;
 	}
-	
+
 	.blog-photo img {
 		opacity: 0.7;
-		width:100%;
+		width: 100%;
 		height: 150px;
 		-webkit-transform: scale(1.15);
 		-ms-transform: scale(1.15);
 		transform: scale(1.15);
 		-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+		display: inline;
 		transition: transform 0.5s, opacity 0.5s;
-	}
+		margin: 0;
+	}	
 	
 	.blog-photo img:hover {
 		opacity: 1;
@@ -781,11 +786,16 @@ h3 {
 		position: absolute;
 		top: 0px;
 		padding: 5px;
+		margin: 0;
+		width: 50%;
 		background-color: black;
 		color: white;
 		text-decoration: none;
 		z-index: 3;
-		border-bottom-right-radius: 5px;
+		/* border-bottom-right-radius: 5px; */
+		border-radius: 0 0 5px 0;
+		border: 1px solid white;
+		display: block;
 	}
 }
 
